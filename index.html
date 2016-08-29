@@ -12,16 +12,16 @@
     <form class="validate">
       <div class="form-item">
         <label for="name">Name: </label>
-        <input name="name" id="name" value="" data-required="yes" data-minlength="5" data-maxlength="30" data-type="text" />
+        <input name="name" id="name" value="" data-required="yes" data-minlength="5" data-maxlength="30" data-type="text" size="30" />
       </div>
       <div class="form-item">
         <label for="email">Email: </label>
-        <input name="email" id="email" value="" data-required="yes" data-regexp="^\w+([\.-]?\w+)*\@\w+([\.-]?\w+)*\.[a-z]{2,3}$" />
+        <input name="email" id="email" value="" data-required="yes" data-regexp="^\w+([\.-]?\w+)*\@\w+([\.-]?\w+)*\.[a-z]{2,3}$" size="30" />
       </div>
       <div class="form-item">
         <label for="date">Date: </label>
-        <input name="date" id="date" value="" data-regexp="^(0[1-9]|[12][0-9]|3[01])\.(0[1-9]|1[012])\.(19|20)\d{2}$" placeholder="dd.mm.yyyy" />
-      <a href="#" class="calendar-button"><i class="fa fa-calendar fa-lg"></i></a>
+        <input name="date" id="date" value="" data-regexp="^(0[1-9]|[12][0-9]|3[01])\.(0[1-9]|1[012])\.(19|20)\d{2}$" placeholder="dd.mm.yyyy" size="30" />
+      <span href="#" class="calendar-button"><i class="fa fa-calendar fa-lg"></i></span>
       <div class="calendar invisible">
         <table class="calendar-table">
           <thead>
@@ -104,7 +104,7 @@
       </div>
       <div class="form-item">
         <label for="ip">IP: </label>
-        <input name="ip" id="ip" value="" data-regexp="^\d+\.\d+\.\d+\.\d+$" />
+        <input name="ip" id="ip" value="" data-regexp="^\d+\.\d+\.\d+\.\d+$" size="30" />
       </div>
       <div>
         <input type="submit" value="Send" />

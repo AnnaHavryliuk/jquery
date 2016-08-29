@@ -138,7 +138,7 @@ $(function() {
       if (!result) {
         event.preventDefault();
         createMessageBox($(elem), errorMessage);
-        setTimeout(removeMessageBox, 3000);
+        setTimeout(removeMessageBox, 2000);
         return false;
       }
     })
