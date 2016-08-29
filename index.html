@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+    <link rel="stylesheet" href="libs/normalize.min.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <form class="validate">
+      <div class="form-item">
+        <label for="name">Name: </label>
+        <input name="name" id="name" value="" data-required="yes" data-minlength="5" data-maxlength="30" data-type="text" />
+      </div>
+      <div class="form-item">
+        <label for="email">Email: </label>
+        <input name="email" id="email" value="" data-required="yes" data-regexp="^\w+([\.-]?\w+)*\@\w+([\.-]?\w+)*\.[a-z]{2,3}$" />
+      </div>
+      <div class="form-item">
+        <label for="date">Date: </label>
+        <input name="date" id="date" value="" data-regexp="^(0[1-9]|[12][0-9]|3[01])\.(0[1-9]|1[012])\.(19|20)\d{2}$" placeholder="dd.mm.yyyy" />
+      <a href="#" class="calendar-button"><i class="fa fa-calendar fa-lg"></i></a>
+      <div class="calendar invisible">
+        <table class="calendar-table">
+          <thead>
+            <tr>
+              <th colspan="7" class="calendar-header">
+                <span class="arrow arrow-left"><i class="fa fa-angle-left fa-lg"></i></span>
+                <span class="calendar-title month active">Month</span>
+                <span class="calendar-title year">Year</span>
+                <span class="arrow arrow-right"><i class="fa fa-angle-right fa-lg"></i></span>
+              </th>
+            </tr>
+            <tr>
+              <th>Su</th>
+              <th>Mo</th>
+              <th>Tu</th>
+              <th>We</th>
+              <th>Th</th>
+              <th>Fr</th>
+              <th>Sa</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+      <div class="form-item">
+        <label for="ip">IP: </label>
+        <input name="ip" id="ip" value="" data-regexp="^\d+\.\d+\.\d+\.\d+$" />
+      </div>
+      <div>
+        <input type="submit" value="Send" />
+      </div>
+    </form>
+
+    <div class="countdown" data-countdown-start="91:00:02:15">
+    <h2>We're comming soon...</h2>
+      <div class="box">
+        <div class="time" data-days></div>
+        <span>days</span>
+      </div>
+      <div class="box">
+        <div class="time" data-hours></div>
+        <span>hours</span>
+      </div>
+      <div class="box">
+        <div class="time" data-minutes></div>
+        <span>minutes</span>
+      </div>
+      <div class="box">
+        <div class="time" data-seconds></div>
+        <span>seconds</span>
+      </div>
+    </div>
+    
+    <script src="libs/jquery-3.1.0.min.js"></script>
+    <script src="libs/underscore-min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

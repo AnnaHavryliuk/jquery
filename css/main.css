@@ -1,0 +1,96 @@
+body {
+  font: 16px/1.5 sans-serif;
+  padding: 8px;
+}
+.validate {
+  width: 300px;
+  margin: auto;
+  padding: 10px;
+}
+.form-item {
+  position: relative;
+  padding: 10px 0;
+}
+.message-box {
+  position: absolute;
+  top: 36px;
+  left: 60px;
+  z-index: 100;
+}
+.triangle {
+  position: relative;
+  top: 1px;
+  width: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid red;
+}
+.message {
+  padding: 10px;
+  border: solid darkgray 1px;
+  font-size: 0.8em;
+  background-color: #fff;
+  color: red;
+}
+.invisible {
+  display: none;
+}
+.calendar-button {
+  margin: 0;
+  padding: 5px 5px 5px 0;
+}
+.calendar {
+  position: absolute;
+  left: 42px;
+  z-index: 50;
+  margin-top: 2px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  border: solid darkgray 1px;
+  border-radius: 7px;
+}
+.calendar-table {
+  width: 210px;
+}
+.calendar-title {
+  padding: 5px;
+}
+.calendar-table td, .calendar-title, .arrow {
+  border-radius: 3px;
+}
+.arrow {
+  padding: 0 10px;
+}
+.arrow-left {
+  float: left;
+}
+.arrow-right {
+  float: right;
+}
+.arrow-left:hover, .arrow-right:hover, .calendar-title:hover, .calendar-table td:hover {
+  background-color: lightgrey;
+}
+.active {
+  background-color: darkgray;
+  color: #fff;
+}
+.countdown {
+  width: 400px;
+  margin: auto;
+  padding:  15px 5px 30px 5px;
+  background-color: darkgray;
+  text-align: center;
+}
+.box {
+  display: inline-block;
+  width: 15%;
+  margin-right: 15px;
+}
+.time {
+  font-size: 2em;
+  padding: 5px;
+  border: solid 1px #6b6b6b;
+  border-radius: 5px;
+  background-color: lightgray;
+}
